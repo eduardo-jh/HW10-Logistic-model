@@ -27,7 +27,7 @@ for i in range(1, len(t)):
     P[i] = P[i-1] + r * P[i-1] * (1 - P[i-1]/K)*dt
     Pana[i] = (K * P0 * np.exp(r*t[i]))/(K + P0 * (np.exp(r*t[i]) - 1))
 
-# Make predictions uwing the analytical model and numpy array
+# Make predictions using the analytical model and numpy array
 Pexp = (K * P0 * np.exp(r*t))/(K + P0 * (np.exp(r*t) - 1))
 
 plt.plot(t, P, 'bx', t, Pana, 'g+', t, Pexp, 'r-')
