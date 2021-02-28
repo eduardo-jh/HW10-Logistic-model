@@ -42,7 +42,7 @@ def sum_squared_error(x, t, P):
     Parameters
     ----------
     x : array
-        array contining  parameters K, P0, and r (in that order).
+        array containing  parameters K, P0, and r (in that order).
     t : array
         actual time vector.
     P : array
@@ -136,12 +136,12 @@ growth_script['CO2'] = CO2
 plt.figure(0)
 plt.plot(growth_script['Time'], growth_script['Conc'], 'k-', label='Conc')
 plt.plot(growth_script['Time'], Cexp, 'r-', label='Conc (exp)')
-plt.plot(growth_script['Time'], growth_script['N'], 'b--', label='N')
-plt.plot(growth_script['Time'], growth_script['P'], 'r-.', label='P')
-plt.plot(growth_script['Time'], growth_script['CO2'], 'm:', label='$CO_2$')
-plt.plot(growth_script['Time'], growth_script['mu'], 'y-', label='$\mu$')
+# plt.plot(growth_script['Time'], growth_script['N'], 'b--', label='N')
+# plt.plot(growth_script['Time'], growth_script['P'], 'r-.', label='P')
+# plt.plot(growth_script['Time'], growth_script['CO2'], 'm:', label='$CO_2$')
+# plt.plot(growth_script['Time'], growth_script['mu'], 'y-', label='$\mu$')
 plt.legend(loc='best', fancybox=True)
 plt.xlabel('Time [days]')
 plt.ylabel('Concentration $K,P,CO_2$ [mole/L], C [mg/L]')
-plt.savefig('p5_algae_model_%ddays.png' % number_of_days, dpi=300, bbox_inches='tight')
+# plt.savefig('p5_algae_model_%ddays.png' % number_of_days, dpi=300, bbox_inches='tight')
 plt.show()
